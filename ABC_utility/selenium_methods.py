@@ -12,3 +12,6 @@ class Selenium_helper:
     def web_element_click(self, locator):
         WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(locator)).click()
 
+    def only_locator(self, locator):
+        WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(locator)).click()
+        #WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(locator)).send_keys("BTC")
